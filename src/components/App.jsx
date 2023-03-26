@@ -12,11 +12,7 @@ export function App (){
   const [bad, setBad] = useState(0);
 
 
-  // state = {
-  //   good: 0,
-  //   neutral: 0,
-  //   bad: 0,
-  // };
+ 
 
   const hadleClick = e => {
     const { name } = e.target;
@@ -39,10 +35,7 @@ export function App (){
     }
 
 
-    // const { name } = e.target;
-    // this.setState(prevState => ({
-    //   [name]: prevState[name] + 1,
-    // }));
+    
   };
 
   const countSumOfFeedbacks=() =>{
@@ -50,17 +43,15 @@ export function App (){
       return acc + currentValue;
     }, 0);
 
-    //  let total = good + bad + neutral
-    // return total
+ 
   }
 
   const countPositiveFeedback=() =>{
-    // const { good } = this.state;
+  
     return Math.round((good / countSumOfFeedbacks()) * 100);
   }
 
-  // render() {
-  //   const { good, bad, neutral } = this.state;
+
 
     return (
       <>
